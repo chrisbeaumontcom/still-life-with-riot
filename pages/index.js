@@ -7,6 +7,11 @@ export default function Home() {
       <Head>
         <title>Still Life with Riot, 2021</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
@@ -25,33 +30,11 @@ export default function Home() {
           <p>2021 is off and racing... and started with a riot!</p>
 
           <p>
-            This painting is an effort at History painting - even if it is a
-            still life.{' '}
-          </p>
-
-          <p>
-            When I was setting prices with the gallery for a recent exhibition,
-            the gallery told me we could only ask so much for still life
-            paintings because that's what the market will bear. So I'm getting
-            all genre-d up here and going for some HISTORY genre stuff. (FYI:
-            Paintings are also priced by square centimeter like wall-paper or
-            pizza.)
-          </p>
-
-          <p>
-            This work is about time. Paintings are painted over time unlike
+            This work is about time. Paintings are painted over time, unlike
             photographs which are records of an instant. Both are images but
-            paintings really are things, and the recording they really make is
-            of their own execution.
-          </p>
-
-          <p>
-            I wanted to play with the performance of an oil painting like a
-            composer creating variations on a theme and a musician performing
-            the same piece multiple times. I set out to take a previous
-            composition and execute/perform it in three variations: the same
-            still life subject arrangement with three completely different
-            visual contexts.
+            paintings really are things, and the recording they make is of their
+            own execution. This painting is an effort at History painting - even
+            if it is a still life.
           </p>
 
           <p>
@@ -67,18 +50,27 @@ export default function Home() {
           </p>
 
           <p>
-            History is a race to what happened next. The horse and jockey is
-            borrowed from a past commission and surrealistically challenges the
-            stasis of the still life of lemons.
+            I wanted to play with the performance of an oil painting like a
+            composer creating variations on a theme and a musician performing
+            the same piece multiple times. I set out to take a previous
+            composition and execute/perform it in three variations: the same
+            still life subject arrangement with three completely different
+            visual contexts.
           </p>
 
           <p>
             This picture uses the (very melbourne) neo-classical architecture in
-            the upper left of Tiepolo's The Banquet of Cleopatra, a painting
-            about an historical moment. When I saw the images on social media of
-            the US Capitol riots of 6 January I knew I had to re-paint Tieplo's
-            balconies. They had changed role from passive witness to active
-            insurrection.
+            the upper left of Tiepolo's <em>The Banquet of Cleopatra</em>, a
+            painting about an historical moment. When I saw the images on social
+            media of the US Capitol riots of 6 January I knew I had to re-paint
+            Tieplo's balconies. They had changed role from passive witness to
+            active insurrection.
+          </p>
+
+          <p>
+            History is a race to what happened next. The horse and jockey is
+            borrowed from a past commission and surrealistically challenges the
+            stasis of the still life of lemons.
           </p>
         </div>
 
@@ -91,7 +83,7 @@ export default function Home() {
             <p>Oil on Linen 61 x 76cm 2017</p>
           </a>
           <a
-            href="https://www.ngv.vic.gov.au/explore/collection/work/4409/"
+            href="https://en.wikipedia.org/wiki/The_Banquet_of_Cleopatra_(Tiepolo)"
             className="card"
           >
             <h3>The Banquet of Cleopatra</h3>
@@ -215,21 +207,10 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
         .title {
           margin: 0;
           line-height: 1.15;
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
 
         .title,
@@ -239,7 +220,7 @@ export default function Home() {
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
 
         code {
@@ -283,13 +264,13 @@ export default function Home() {
 
         .card h3 {
           margin: 0 0 1rem 0;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
 
         .card p {
           margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
+          font-size: 1.1rem;
+          line-height: 1.2;
         }
 
         @media (max-width: 600px) {
@@ -304,6 +285,17 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+          .card h3 {
+            font-size: 1rem;
+          }
+          .card p {
+            margin: 0;
+            font-size: 0.8rem;
+            line-height: 1;
+          }
+          .blurb {
+            font-size: 0.9em;
+          }
         }
       `}</style>
 
@@ -312,11 +304,10 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
         }
-
         * {
           box-sizing: border-box;
         }
