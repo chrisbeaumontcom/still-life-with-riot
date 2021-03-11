@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-//&rarr;
 export default function Home() {
   return (
     <div className="container">
@@ -70,7 +69,8 @@ export default function Home() {
           <p>
             History is a race to what happened next. The horse and jockey is
             borrowed from a past commission and surrealistically challenges the
-            stasis of the still life of lemons.
+            stasis of the still life of lemons. It is racing across the the
+            canvas yet frozen in a photographic moment of history.
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -234,7 +234,7 @@ export default function Home() {
 
         .grid {
           display: flex;
-          align-items: center;
+          align-items: stretch;
           justify-content: center;
           flex-wrap: wrap;
 
