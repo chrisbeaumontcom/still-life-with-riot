@@ -1,48 +1,59 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
+//&rarr;
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Still Life with Riot, 2021</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <img
+            className="resp"
+            src="https://res.cloudinary.com/web-school/image/upload/w_600,q_auto:best/still-life-with-riot/still-life-with-riot-ed_zyejwy.jpg"
+            alt="Still Life with Riot"
+          />
+          <br />
+          <em>Still Life with Riot</em>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <p className="description">Oil on linen, 61 x 76cm, 2021</p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a
+            href="https://www.chrisbeaumont.com/detail/still-life-with-lemons-i"
+            className="card"
+          >
+            <h3>Still Life with Lemons I</h3>
+            <p>Oil on Linen 61 x 76cm 2017</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a
+            href="https://www.ngv.vic.gov.au/explore/collection/work/4409/"
+            className="card"
+          >
+            <h3>The Banquet of Cleopatra</h3>
+            <p>National Gallery of Victoria</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://www.theatlantic.com/magazine/archive/2021/04/the-internet-doesnt-have-to-be-awful/618079/"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>How to Put Out Democracy’s Dumpster Fire</h3>
+            <p>Anne Applebaum and Peter Pomerantsev - The Atlantic</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://onezero.medium.com/how-to-destroy-surveillance-capitalism-8135e6744d59"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>How to Destroy 'Surveillance Capitalism'</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Cory Doctorow
+              <br /> Medium
             </p>
           </a>
         </div>
@@ -50,16 +61,20 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://www.chrisbeaumont.com?utm_source=still-life-with-riot&utm_medium=default-site&utm_campaign=still-life-with-riot"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Published by{' '}
+          <img src="/cb-site.png" alt="Site Logo" title="Chris Beaumont" />
         </a>
       </footer>
 
       <style jsx>{`
+        img.resp {
+          width: 100%;
+          height: auto;
+        }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -178,10 +193,6 @@ export default function Home() {
           line-height: 1.5;
         }
 
-        .logo {
-          height: 1em;
-        }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -205,5 +216,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
