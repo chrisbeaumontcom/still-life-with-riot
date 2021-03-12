@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className="title">
           <img
             className="resp"
-            src="https://res.cloudinary.com/web-school/image/upload/w_800,q_auto:best/still-life-with-riot/still-life-with-riot-ed_amku5w.jpg"
+            src="https://res.cloudinary.com/web-school/image/upload/w_800,q_auto:best/still-life-with-riot/beaumont_christopher_still-life-with-riot_sm9q2i.jpg"
             alt="Still Life with Riot"
           />
           <br />
@@ -29,8 +29,14 @@ export default function Home() {
           <p>2021 is off and racing... and started with a riot!</p>
 
           <p>
-            This work is about time. Paintings are painted over time, unlike
-            photographs which are records of an instant. Both are images but
+            Would there have been a riot at the US Capitol on the 6th January
+            2021 without social media?
+          </p>
+
+          <p>
+            This work is about time. Present time, historical time and the way
+            time just seems to race at us. Unlike photographs which are records
+            of an instant, paintings are painted over time. Both are images but
             paintings really are things, and the recording they make is of their
             own execution. This painting is an effort at History painting - even
             if it is a still life.
@@ -47,6 +53,12 @@ export default function Home() {
             social media driven riot that will certainly go down in US and world
             history.
           </p>
+          <p>The original series:</p>
+          <img
+            className="resp"
+            src="https://res.cloudinary.com/web-school/image/upload/w_800,e_sharpen,q_auto:best/still-life-with-riot/lemons-x3-2017_fcifrn.jpg"
+            alt="3 paintings of lemons"
+          />
 
           <p>
             I wanted to play with the performance of an oil painting like a
