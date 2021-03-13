@@ -55,8 +55,8 @@ export default function Home() {
           </p>
           <p>The original series:</p>
           <img
-            className="resp"
-            src="https://res.cloudinary.com/web-school/image/upload/w_800,e_sharpen,q_auto:best/still-life-with-riot/lemons-x3-2017_fcifrn.jpg"
+            style={{ width: '100%', height: 'auto' }}
+            src="/images/lemons-x3-2017.jpg"
             alt="3 paintings of lemons"
           />
 
@@ -327,3 +327,5 @@ export default function Home() {
     </div>
   );
 }
+
+// https://res.cloudinary.com/web-school/image/upload/w_800,e_sharpen,q_auto:best/still-life-with-riot/lemons-x3-2017_fcifrn.jpg
