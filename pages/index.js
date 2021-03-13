@@ -15,17 +15,23 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          <img
-            className="resp"
-            src="https://res.cloudinary.com/web-school/image/upload/w_800,q_auto:best/still-life-with-riot/beaumont_christopher_still-life-with-riot_sm9q2i.jpg"
-            alt="Still Life with Riot"
+        <div className="frame">
+          <Image
+            src="/images/beaumont_christopher_still-life-with-riot-800pxw.jpg"
+            alt="Image of Still Life with Riot"
+            width={800}
+            height={641}
           />
-          <br />
-          <em>Still Life with Riot</em>
-        </h1>
+          <h1 className="title">
+            <em>Still Life with Riot</em>
+          </h1>
+          <p className="description">
+            Oil on linen, 61 x 76cm
+            <br />
+            Beaumont, Christopher, 2021
+          </p>
+        </div>
 
-        <p className="description">Oil on linen, 61 x 76cm, 2021</p>
         <div className="blurb">
           <p>2021 is off and racing... and started with a riot!</p>
 
@@ -160,11 +166,10 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        img.resp {
-          width: 100%;
-          height: auto;
+        div.frame {
           border: 10px solid #5a989e;
           outline: 1px solid #eeeeee;
+          padding: 0;
         }
         .container {
           background-color: #9dc6c2;
