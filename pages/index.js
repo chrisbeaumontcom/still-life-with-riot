@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -54,12 +55,13 @@ export default function Home() {
             history.
           </p>
           <p>The original series:</p>
-          <img
-            style={{ width: '100%', height: 'auto' }}
+
+          <Image
             src="/images/lemons-x3-2017.jpg"
             alt="3 paintings of lemons"
+            width={800}
+            height={210}
           />
-
           <p>
             I wanted to play with the performance of an oil painting like a
             composer creating variations on a theme and a musician performing
@@ -193,6 +195,9 @@ export default function Home() {
           max-width: 800px;
           margin-top: 1rem;
         }
+        .blurb p {
+          font-size: 1em;
+        }
 
         footer {
           width: 100%;
@@ -232,7 +237,7 @@ export default function Home() {
 
         .description {
           line-height: 1.5;
-          font-size: 1.3rem;
+          font-size: 1em;
         }
 
         code {
