@@ -11,10 +11,11 @@ export default function Layout({ children }) {
   useEffect(() => {
     ga4react.initialize().then(
       (ga4) => {
+        console.log(ga4);
         ga4.pageview(router.pathname);
       },
       (err) => {
-        console.error(err);
+        console.error('GA error:', err);
       }
     );
   });

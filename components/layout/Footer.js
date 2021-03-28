@@ -1,4 +1,5 @@
 export default function Footer() {
+  const d = new Date();
   return (
     <>
       <footer>
@@ -7,7 +8,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Published by
+          &copy; {d.getFullYear()} Published by
           <img src="/cb-site.png" alt="Site Logo" title="Chris Beaumont" />
           chrisbeaumont.com
         </a>

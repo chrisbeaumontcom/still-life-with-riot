@@ -10,22 +10,22 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="frame">
+        <div className="img-frame">
           <Image
             src="/images/beaumont_christopher_still-life-with-riot-800pxw.jpg"
             alt="Image of Still Life with Riot"
             width={800}
             height={641}
           />
-          <h1 className="title">
-            <em>Still Life with Riot</em>
-          </h1>
-          <p className="description">
-            Oil on linen, 61 x 76cm
-            <br />
-            Beaumont, Christopher, 2021
-          </p>
         </div>
+        <h1 className="title">
+          <em>Still Life with Riot</em>
+        </h1>
+        <p className="description">
+          Oil on linen, 61 x 76cm
+          <br />
+          Beaumont, Christopher, 2021
+        </p>
 
         <div className="blurb">
           <p>2021 is off and racing... and started with a riot!</p>
@@ -56,20 +56,20 @@ export default function Home() {
             history.
           </p>
           <p>The original series:</p>
-
-          <Image
-            src="/images/lemons-x3-2017.jpg"
-            alt="3 paintings of lemons"
-            width={800}
-            height={210}
-          />
+          <div className="img-frame">
+            <Image
+              src="/images/lemons-x3-2017.jpg"
+              alt="3 paintings of lemons"
+              width={800}
+              height={210}
+            />
+          </div>
           <p>
             I wanted to play with the performance of an oil painting like a
-            composer creating variations on a theme and a musician performing
-            the same piece multiple times. I set out to take a previous
-            composition and execute/perform it in three variations: the same
-            still life subject arrangement with three completely different
-            visual contexts.
+            composer creating variations on a theme or a musician performing the
+            same piece multiple times. I set out to take a previous composition
+            and execute/perform it in three variations: the same still life
+            subject arrangement with three completely different visual contexts.
           </p>
 
           <p>
@@ -149,10 +149,11 @@ export default function Home() {
       </main>
 
       <style jsx>{`
-        div.frame {
+        div.img-frame {
           border: 10px solid #5a989e;
           outline: 1px solid #eeeeee;
           padding: 0;
+          font-size: 0px;
         }
 
         main {
