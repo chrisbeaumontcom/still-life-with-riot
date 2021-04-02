@@ -24,7 +24,8 @@ export default function Home() {
         <p className="description">
           Oil on linen, 61 x 76cm
           <br />
-          Beaumont, Christopher, 2021
+          <a href="https://www.chrisbeaumont.com/">Beaumont, Christopher</a>,
+          2021
         </p>
 
         <div className="blurb">
@@ -113,7 +114,7 @@ export default function Home() {
             <p>
               Elamin Abdelmahmoud
               <br />
-              Buzzfeed
+              <em>Buzzfeed</em>
             </p>
           </a>
 
@@ -122,7 +123,9 @@ export default function Home() {
             className="card"
           >
             <h3>How to Put Out Democracy's Dumpster Fire</h3>
-            <p>Anne Applebaum and Peter Pomerantsev - The Atlantic</p>
+            <p>
+              Anne Applebaum and Peter Pomerantsev - <em>The Atlantic</em>
+            </p>
           </a>
 
           <a
@@ -132,7 +135,8 @@ export default function Home() {
             <h3>How to Destroy 'Surveillance Capitalism'</h3>
             <p>
               Cory Doctorow
-              <br /> Medium
+              <br />
+              <em>Medium</em>
             </p>
           </a>
           <a
@@ -142,7 +146,8 @@ export default function Home() {
             <h3>The Physics and Philosophy of Time</h3>
             <p>
               Carlo Rovelli
-              <br /> YouTube
+              <br />
+              <em>YouTube</em>
             </p>
           </a>
         </div>

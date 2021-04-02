@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import GA4React from 'ga-4-react';
 const ga4react = new GA4React('G-HJBEBD0WEL');
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   useEffect(() => {
     ga4react.initialize().then(
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap"
           rel="stylesheet"
         />
       </Head>
