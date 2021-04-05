@@ -4,7 +4,9 @@ import Footer from './Footer';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import GA4React from 'ga-4-react';
-const ga4react = new GA4React(process.env.GAKey);
+
+const ga = process.env.GAKey || '';
+const ga4react = new GA4React(ga);
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
