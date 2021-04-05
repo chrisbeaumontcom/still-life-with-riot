@@ -4,14 +4,14 @@ import Footer from './Footer';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import GA4React from 'ga-4-react';
-const ga4react = new GA4React('G-HJBEBD0WEL');
+const ga4react = new GA4React(process.env.GAKey);
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   useEffect(() => {
     ga4react.initialize().then(
       (ga4) => {
-        console.log(ga4);
+        // console.log(ga4);
         ga4.pageview(router.pathname);
       },
       (err) => {
