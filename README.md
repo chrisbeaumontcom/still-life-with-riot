@@ -1,6 +1,6 @@
 ## Still Life with Riot
 
-![Image of painting](https://res.cloudinary.com/web-school/image/upload/w_600,q_auto:best/still-life-with-riot/lemons-x3-2017_fcifrn.jpg)
+![Image of painting](https://res.cloudinary.com/web-school/image/upload/w_600,q_auto:best/still-life-with-riot/beaumont_christopher_still-life-with-riot_sm9q2i.jpg)
 
 Oil on linen, 61 x 76cm, 2021
 
